@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Portfolio of Renz Cedrick M. Sikat - 1st Year Information Technology Student at Mindoro State University">
+    <title>Renz Cedrick M. Sikat | IT Student Portfolio</title>
+    <!-- Google Fonts: Inter & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Subtle Floating Background Decorative Shapes -->
+    <div class="bg-decorations" aria-hidden="true">
+        <div class="grid-overlay"></div>
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="floating-code code-1">&lt;IT_Student /&gt;</div>
+        <div class="floating-code code-2">{ status: "learning" }</div>
+        <div class="floating-code code-3">01001001 01010100</div>
+    </div>
+
+    <!-- Header & Navigation Bar -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo" aria-label="Renz Cedrick Sikat Home">
+                <span class="terminal-prompt">&gt;_</span> renz<span class="accent-dot">.</span>dev
+            </a>
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <nav aria-label="Main Navigation">
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About Me</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#certificates" class="nav-link">Certificates</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#hobbies" class="nav-link">Hobbies</a></li>
+                    <li><a href="#contact" class="nav-link nav-cta">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. HERO SECTION (HOME) -->
+        <section id="home" class="hero-section">
+            <div class="container hero-grid">
+                <div class="hero-content reveal">
+                    <div class="status-badge">
+                        <span class="pulse-dot"></span>
+                        <span class="mono-text">1st Year BS Information Technology • MinSU</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="highlight-text">Renz Cedrick M. Sikat</span>
+                    </h1>
+                    <div class="typing-wrapper">
+                        <span class="mono-prefix">$ echo </span>
+                        <span id="typedText" class="typed-text" aria-live="polite"></span>
+                        <span class="cursor" aria-hidden="true">|</span>
+                    </div>
+                    <p class="hero-description">
+                        Aspiring IT professional based in Calapan City, Oriental Mindoro, exploring the foundations of computing, programming, and modern web technologies.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>Explore Projects</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Get In Touch</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Developer Terminal Card Visual -->
+                <div class="hero-terminal reveal" style="--delay: 0.15s;">
+                    <div class="terminal-window">
+                        <div class="terminal-header">
+                            <div class="terminal-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <span class="terminal-title">renz@minsu-it:~</span>
+                        </div>
+                        <div class="terminal-body">
+                            <div class="code-line"><span class="prompt">$</span> cat profile.json</div>
+                            <pre class="json-output"><code>{
+  <span class="key">"name"</span>: <span class="string">"Renz Cedrick M. Sikat"</span>,
+  <span class="key">"nickname"</span>: <span class="string">"Renz"</span>,
+  <span class="key">"age"</span>: <span class="number">18</span>,
+  <span class="key">"education"</span>: <span class="string">"1st Year College"</span>,
+  <span class="key">"school"</span>: <span class="string">"Mindoro State University"</span>,
+  <span class="key">"course"</span>: <span class="string">"Information Technology"</span>,
+  <span class="key">"location"</span>: <span class="string">"Calapan City, Oriental Mindoro"</span>,
+  <span class="key">"goal"</span>: <span class="string">"Professional IT"</span>
+}</code></pre>
+                            <div class="code-line"><span class="prompt">$</span> <span class="blink-cursor">_</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. ABOUT ME SECTION -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">// 01. ABOUT_ME</span>
+                    <h2 class="section-title">Personal Background &amp; Vision</h2>
+                </div>
+
+                <div class="about-grid">
+                    <!-- Creative Profile Card -->
+                    <div class="profile-card reveal">
+                        <div class="avatar-box">
+                            <div class="avatar-initials" aria-hidden="true">RS</div>
+                            <div class="avatar-ring"></div>
+                        </div>
+                        <h3 class="profile-name">Renz Cedrick M. Sikat</h3>
+                        <p class="profile-role">1st Year IT Student</p>
+                        <div class="profile-meta">
+                            <div class="meta-item">
+                                <span class="meta-label">Nickname:</span>
+                                <span class="meta-value">Renz</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Age:</span>
+                                <span class="meta-value">18 Years Old</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Institution:</span>
+                                <span class="meta-value">Mindoro State University</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Location:</span>
+                                <span class="meta-value">Calapan City, Oriental Mindoro</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bio & Future Potential -->
+                    <div class="about-details reveal" style="--delay: 0.15s;">
+                        <div class="card bio-card">
+                            <div class="card-header-line">
+                                <span class="mono-accent">&gt; whoami</span>
+                            </div>
+                            <p class="bio-text">
+                                My name is <strong>Renz Cedrick Sikat</strong>, and I am currently a <strong>1st year majoring in Information Technology</strong> at <strong>Mindoro State University</strong>. I have always been fascinated by Intro Computing. My goal after graduation is to become a professional IT and contribute positively to the field. I’m looking forward to learning alongside all of you and making the most of this experience.
+                            </p>
+                            <div class="pillars-grid">
+                                <div class="pillar-item">
+                                    <span class="pillar-icon" aria-hidden="true">01</span>
+                                    <h4>Foundation Building</h4>
+                                    <p>Mastering core computing concepts, structured programming, and logical problem-solving.</p>
+                                </div>
+                                <div class="pillar-item">
+                                    <span class="pillar-icon" aria-hidden="true">02</span>
+                                    <h4>Continuous Growth</h4>
+                                    <p>Embracing hands-on lab work, virtual environments, and collaborative peer learning.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. SKILLS SECTION -->
+        <section id="skills" class="section section-alt">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">// 02. SKILL_MATRIX</span>
+                    <h2 class="section-title">Technical &amp; General Skills</h2>
+                    <p class="section-subtitle">Core competencies developed through foundational coursework and independent practice.</p>
+                </div>
+
+                <div class="skills-wrapper">
+                    <!-- Technical Skills Column -->
+                    <div class="skills-category reveal">
+                        <div class="category-header">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                            <h3>Technical Skills</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-card" tabindex="0">
+                                <div class="skill-top">
+                                    <span class="skill-name">Programming Languages</span>
+                                    <span class="skill-badge">C / C# / Web</span>
+                                </div>
+                                <p class="skill-desc">Writing structured programs, console applications, and foundational logic using C, C#, HTML5, CSS3, and JavaScript.</p>
+                                <div class="skill-tags">
+                                    <span class="tag">C Language</span>
+                                    <span class="tag">C#</span>
+                                    <span class="tag">HTML5 &amp; CSS3</span>
+                                    <span class="tag">JavaScript</span>
+                                </div>
+                            </div>
+
+                            <div class="skill-card" tabindex="0">
+                                <div class="skill-top">
+                                    <span class="skill-name">Operating Systems &amp; Virtualization</span>
+                                    <span class="skill-badge">Systems</span>
+                                </div>
+                                <p class="skill-desc">Configuring, navigating, and managing desktop operating systems and virtualized lab environments.</p>
+                                <div class="skill-tags">
+                                    <span class="tag">Windows OS</span>
+                                    <span class="tag">Virtual Machines</span>
+                                    <span class="tag">System Setup</span>
+                                </div>
+                            </div>
+
+                            <div class="skill-card" tabindex="0">
+                                <div class="skill-top">
+                                    <span class="skill-name">Development Tools</span>
+                                    <span class="skill-badge">Workflow</span>
+                                </div>
+                                <p class="skill-desc">Utilizing modern code editors, compilers, and version control fundamentals to build and test coursework.</p>
+                                <div class="skill-tags">
+                                    <span class="tag">VS Code</span>
+                                    <span class="tag">Compilers &amp; IDEs</span>
+                                    <span class="tag">Browser DevTools</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- General / Soft Skills Column -->
+                    <div class="skills-category reveal" style="--delay: 0.15s;">
+                        <div class="category-header">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                            <h3>General / Soft Skills</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-card soft-card" tabindex="0">
+                                <div class="skill-top">
+                                    <span class="skill-name">Problem-Solving &amp; Debugging</span>
+                                    <span class="skill-badge accent-badge">Analytical</span>
+                                </div>
+                                <p class="skill-desc">Breaking down complex computing problems step-by-step and tracing syntax or logic errors systematically.</p>
+                            </div>
+
+                            <div class="skill-card soft-card" tabindex="0">
+                                <div class="skill-top">
+                                    <span class="skill-name">Adaptability</span>
+                                    <span class="skill-badge accent-badge">Growth</span>
+                                </div>
+                                <p class="skill-desc">Quickly adjusting to new software tools, programming paradigms, and college-level academic demands.</p>
+                            </div>
+
+                            <div class="skill-card soft-card" tabindex="0">
+                                <div class="skill-top">
+                                    <span class="skill-name">Persistence &amp; Time Management</span>
+                                    <span class="skill-badge accent-badge">Discipline</span>
+                                </div>
+                                <p class="skill-desc">Staying committed until code compiles cleanly while balancing laboratory deadlines and coursework.</p>
+                            </div>
+
+                            <div class="skill-card soft-card" tabindex="0">
+                                <div class="skill-top">
+                                    <span class="skill-name">Collaboration &amp; Teamwork</span>
+                                    <span class="skill-badge accent-badge">Team</span>
+                                </div>
+                                <p class="skill-desc">Working effectively with classmates on group initiatives, peer code reviews, and shared learning goals.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. CERTIFICATES AND ACHIEVEMENTS SECTION -->
+        <section id="certificates" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">// 03. CREDENTIALS</span>
+                    <h2 class="section-title">Certificates &amp; Achievements</h2>
+                    <p class="section-subtitle">Click on any certificate card to inspect full details and preview.</p>
+                </div>
+
+                <div class="cert-grid">
+                    <!-- Certificate 1: C Language -->
+                    <article class="cert-card reveal" tabindex="0" role="button" aria-label="View details for C Language Certificate" data-cert="c-lang">
+                        <div class="cert-preview-placeholder">
+                            <div class="placeholder-frame">
+                                <span class="placeholder-badge">CERTIFICATE PLACEHOLDER</span>
+                                <div class="cert-emblem">C</div>
+                                <span class="placeholder-sub">Official Certificate Image Slot</span>
+                            </div>
+                        </div>
+                        <div class="cert-body">
+                            <div class="cert-meta">
+                                <span class="cert-tag">Programming Language</span>
+                                <span class="cert-status">Verified Accomplishment</span>
+                            </div>
+                            <h3 class="cert-title">C Language</h3>
+                            <p class="cert-excerpt">Foundational proficiency in C programming syntax, control structures, functions, and memory concepts.</p>
+                            <span class="cert-action">
+                                View Certificate Details
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 3h6v6"></path><path d="M10 14L21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
+                            </span>
+                        </div>
+                    </article>
+
+                    <!-- Certificate 2: C Sharp -->
+                    <article class="cert-card reveal" style="--delay: 0.15s;" tabindex="0" role="button" aria-label="View details for C Sharp Certificate" data-cert="c-sharp">
+                        <div class="cert-preview-placeholder">
+                            <div class="placeholder-frame">
+                                <span class="placeholder-badge">CERTIFICATE PLACEHOLDER</span>
+                                <div class="cert-emblem">C#</div>
+                                <span class="placeholder-sub">Official Certificate Image Slot</span>
+                            </div>
+                        </div>
+                        <div class="cert-body">
+                            <div class="cert-meta">
+                                <span class="cert-tag">Programming Language</span>
+                                <span class="cert-status">Verified Accomplishment</span>
+                            </div>
+                            <h3 class="cert-title">C Sharp (C#)</h3>
+                            <p class="cert-excerpt">Core competencies in C# programming, object-oriented principles, and console application development.</p>
+                            <span class="cert-action">
+                                View Certificate Details
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 3h6v6"></path><path d="M10 14L21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
+                            </span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. PROJECTS SECTION (Clearly Marked Placeholders) -->
+        <section id="projects" class="section section-alt">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">// 04. WORKSPACE</span>
+                    <h2 class="section-title">Projects &amp; Lab Showcase</h2>
+                    <p class="section-subtitle">Upcoming coursework and personal builds currently in development during my 1st year.</p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Placeholder Project 1 -->
+                    <article class="project-card placeholder-project reveal">
+                        <div class="project-top">
+                            <span class="folder-icon" aria-hidden="true">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                            </span>
+                            <span class="project-status-pill">PLACEHOLDER • INCOMING</span>
+                        </div>
+                        <h3 class="project-title">Project Slot #01 — Console Application</h3>
+                        <p class="project-desc">
+                            Reserved for an upcoming 1st-year Information Technology programming project built with C or C#. Details and source repository link will be added once completed.
+                        </p>
+                        <div class="project-footer">
+                            <span class="tech-placeholder">C / C#</span>
+                            <span class="tech-placeholder">Status: Not Yet Uploaded</span>
+                        </div>
+                    </article>
+
+                    <!-- Placeholder Project 2 -->
+                    <article class="project-card placeholder-project reveal" style="--delay: 0.1s;">
+                        <div class="project-top">
+                            <span class="folder-icon" aria-hidden="true">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                            </span>
+                            <span class="project-status-pill">PLACEHOLDER • INCOMING</span>
+                        </div>
+                        <h3 class="project-title">Project Slot #02 — Web Development Lab</h3>
+                        <p class="project-desc">
+                            Reserved for upcoming responsive web design coursework using semantic HTML5, CSS3, and interactive JavaScript.
+                        </p>
+                        <div class="project-footer">
+                            <span class="tech-placeholder">HTML / CSS / JS</span>
+                            <span class="tech-placeholder">Status: Not Yet Uploaded</span>
+                        </div>
+                    </article>
+
+                    <!-- Placeholder Project 3 -->
+                    <article class="project-card placeholder-project reveal" style="--delay: 0.2s;">
+                        <div class="project-top">
+                            <span class="folder-icon" aria-hidden="true">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                            </span>
+                            <span class="project-status-pill">PLACEHOLDER • INCOMING</span>
+                        </div>
+                        <h3 class="project-title">Project Slot #03 — Intro Computing Capstone</h3>
+                        <p class="project-desc">
+                            Reserved for future academic projects exploring operating systems, virtualization labs, or introductory computing systems.
+                        </p>
+                        <div class="project-footer">
+                            <span class="tech-placeholder">IT Fundamentals</span>
+                            <span class="tech-placeholder">Status: Not Yet Uploaded</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. HOBBIES AND INTERESTS SECTION -->
+        <section id="hobbies" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">// 05. BEYOND_THE_TERMINAL</span>
+                    <h2 class="section-title">Hobbies &amp; Interests</h2>
+                    <p class="section-subtitle">What keeps me energized, curious, and balanced outside of class.</p>
+                </div>
+
+                <div class="hobbies-grid">
+                    <!-- Hobby 1 -->
+                    <div class="hobby-card reveal">
+                        <div class="hobby-icon-wrap">
+                            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 20h18L12 4z"></path><path d="M12 4v16"></path></svg>
+                        </div>
+                        <h3>Motor Camping &amp; Road Trips</h3>
+                        <p>Hitting the open road on two wheels, exploring scenic routes around Oriental Mindoro, and setting up camp outdoors.</p>
+                    </div>
+
+                    <!-- Hobby 2 -->
+                    <div class="hobby-card reveal" style="--delay: 0.1s;">
+                        <div class="hobby-icon-wrap">
+                            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                        </div>
+                        <h3>Spending Time with Family</h3>
+                        <p>Sharing quality moments, weekend meals, and meaningful conversations with family members who inspire my goals.</p>
+                    </div>
+
+                    <!-- Hobby 3 -->
+                    <div class="hobby-card reveal" style="--delay: 0.2s;">
+                        <div class="hobby-icon-wrap">
+                            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                        </div>
+                        <h3>Web Design &amp; Coding Projects</h3>
+                        <p>Experimenting with clean layouts, dark-mode interfaces, and interactive coding exercises to sharpen my craft.</p>
+                    </div>
+
+                    <!-- Hobby 4 -->
+                    <div class="hobby-card reveal" style="--delay: 0.3s;">
+                        <div class="hobby-icon-wrap">
+                            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
+                        </div>
+                        <h3>Exploring Emerging Tech</h3>
+                        <p>Keeping up with modern computing trends, software tools, and innovations shaping the future of Information Technology.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. CONTACT SECTION -->
+        <section id="contact" class="section section-alt">
+            <div class="container">
+                <div class="contact-box reveal">
+                    <span class="section-tag">// 06. CONNECT</span>
+                    <h2 class="section-title">Let's Connect &amp; Learn Together</h2>
+                    <p class="contact-text">
+                        Whether you're a fellow student, instructor, or IT enthusiast, feel free to reach out for study collaborations, project discussions, or networking.
+                    </p>
+
+                    <div class="contact-cards">
+                        <a href="mailto:renz04sikat@gmail.com" class="contact-method-card" aria-label="Send an email to renz04sikat@gmail.com">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            </div>
+                            <div class="contact-info">
+                                <span class="contact-label">Direct Email</span>
+                                <span class="contact-value">renz04sikat@gmail.com</span>
+                            </div>
+                        </a>
+
+                        <div class="contact-method-card location-card">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            </div>
+                            <div class="contact-info">
+                                <span class="contact-label">Location</span>
+                                <span class="contact-value">Calapan City, Oriental Mindoro</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-cta-row">
+                        <a href="mailto:renz04sikat@gmail.com?subject=Hello%20Renz%20-%20Portfolio%20Inquiry" class="btn btn-primary">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                            <span>Send Email Now</span>
+                        </a>
+                        <button type="button" class="btn btn-secondary" id="copyEmailBtn" data-email="renz04sikat@gmail.com">
+                            <span id="copyBtnText">Copy Email Address</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <span class="terminal-prompt">&gt;_</span> <strong>Renz Cedrick M. Sikat</strong>
+                <p>1st Year Information Technology • Mindoro State University</p>
+            </div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#certificates">Certificates</a>
+                <a href="#projects">Projects</a>
+            </div>
+            <p class="footer-copy">&copy; <span id="currentYear">2026</span> Renz Cedrick M. Sikat. Built with semantic HTML5, CSS3 &amp; JavaScript.</p>
+        </div>
+    </footer>
+
+    <!-- Certificate Preview Modal -->
+    <div class="modal-backdrop" id="certModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <span class="mono-text modal-tag" id="modalCategory">CERTIFICATE_VIEWER</span>
+                <button type="button" class="modal-close" id="closeModalBtn" aria-label="Close certificate preview">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image-placeholder">
+                    <div class="modal-placeholder-box">
+                        <span class="placeholder-badge">CERTIFICATE IMAGE PLACEHOLDER</span>
+                        <div class="modal-emblem" id="modalEmblem">C</div>
+                        <p class="modal-placeholder-note">Replace this placeholder container with the official scanned certificate image when ready.</p>
+                    </div>
+                </div>
+                <div class="modal-details">
+                    <h3 id="modalTitle">Certificate Title</h3>
+                    <p class="modal-recipient">Awarded to: <strong>Renz Cedrick M. Sikat</strong></p>
+                    <p id="modalDescription" class="modal-desc">Description of accomplishment.</p>
+                    <div class="modal-skills-covered" id="modalTopics"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript for Interactivity -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // 1. Dynamic Year in Footer
+            const yearEl = document.getElementById('currentYear');
+            if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+            // 2. Typing Animation in Hero Section
+            const typedTextEl = document.getElementById('typedText');
+            const phrases = [
+                '1st Year Information Technology Student',
+                'Mindoro State University',
+                'Passionate About Intro Computing',
+                'Aspiring IT Professional'
+            ];
+            let phraseIndex = 0;
+            let charIndex = 0;
+            let isDeleting = false;
+
+            function typeEffect() {
+                if (!typedTextEl) return;
+                const currentPhrase = phrases[phraseIndex];
+
+                if (isDeleting) {
+                    typedTextEl.textContent = currentPhrase.substring(0, charIndex - 1);
+                    charIndex--;
+                } else {
+                    typedTextEl.textContent = currentPhrase.substring(0, charIndex + 1);
+                    charIndex++;
+                }
+
+                let typeSpeed = isDeleting ? 35 : 65;
+
+                if (!isDeleting && charIndex === currentPhrase.length) {
+                    typeSpeed = 1800; // Pause at full phrase
+                    isDeleting = true;
+                } else if (isDeleting && charIndex === 0) {
+                    isDeleting = false;
+                    phraseIndex = (phraseIndex + 1) % phrases.length;
+                    typeSpeed = 400;
+                }
+
+                setTimeout(typeEffect, typeSpeed);
+            }
+            typeEffect();
+
+            // 3. Mobile Navigation Menu Toggle
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const navLinks = document.getElementById('navLinks');
+            const navItems = document.querySelectorAll('.nav-link');
+
+            if (mobileMenuBtn && navLinks) {
+                mobileMenuBtn.addEventListener('click', () => {
+                    const isOpen = navLinks.classList.toggle('open');
+                    mobileMenuBtn.classList.toggle('active', isOpen);
+                    mobileMenuBtn.setAttribute('aria-expanded', String(isOpen));
+                });
+
+                navItems.forEach(link => {
+                    link.addEventListener('click', () => {
+                        navLinks.classList.remove('open');
+                        mobileMenuBtn.classList.remove('active');
+                        mobileMenuBtn.setAttribute('aria-expanded', 'false');
+                    });
+                });
+            }
+
+            // 4. Active Section Highlighting on Scroll
+            const sections = document.querySelectorAll('section[id]');
+            function highlightActiveNav() {
+                const scrollY = window.scrollY + 140;
+                sections.forEach(section => {
+                    const top = section.offsetTop;
+                    const height = section.offsetHeight;
+                    const id = section.getAttribute('id');
+                    const correspondingLink = document.querySelector(`.nav-links a[href="#${id}"]`);
+
+                    if (scrollY >= top && scrollY < top + height) {
+                        navItems.forEach(item => item.classList.remove('active'));
+                        if (correspondingLink) correspondingLink.classList.add('active');
+                    }
+                });
+            }
+            window.addEventListener('scroll', highlightActiveNav, { passive: true });
+
+            // 5. Scroll-Reveal Intersection Observer
+            const revealElements = document.querySelectorAll('.reveal');
+            const revealObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.12,
+                rootMargin: '0px 0px -40px 0px'
+            });
+
+            revealElements.forEach(el => revealObserver.observe(el));
+
+            // 6. Certificate Modal Logic
+            const certData = {
+                'c-lang': {
+                    emblem: 'C',
+                    title: 'C Language Certificate',
+                    description: 'Recognizes foundational understanding and practical application of the C programming language, including data types, conditional logic, loops, arrays, and structured problem-solving.',
+                    topics: ['Variables & Data Types', 'Control Flow', 'Functions', 'Arrays & Pointers']
+                },
+                'c-sharp': {
+                    emblem: 'C#',
+                    title: 'C Sharp (C#) Certificate',
+                    description: 'Recognizes core competency in C# programming fundamentals, syntax structure, input/output handling, and building clean console-based applications.',
+                    topics: ['C# Syntax', 'Control Structures', 'Methods', 'OOP Foundations']
+                }
+            };
+
+            const certCards = document.querySelectorAll('.cert-card');
+            const certModal = document.getElementById('certModal');
+            const closeModalBtn = document.getElementById('closeModalBtn');
+            const modalEmblem = document.getElementById('modalEmblem');
+            const modalTitle = document.getElementById('modalTitle');
+            const modalDescription = document.getElementById('modalDescription');
+            const modalTopics = document.getElementById('modalTopics');
+            let lastFocusedCard = null;
+
+            function openCertModal(certKey, triggerEl) {
+                const data = certData[certKey];
+                if (!data || !certModal) return;
+
+                lastFocusedCard = triggerEl;
+                modalEmblem.textContent = data.emblem;
+                modalTitle.textContent = data.title;
+                modalDescription.textContent = data.description;
+                modalTopics.innerHTML = data.topics.map(t => `<span class="tag">${t}</span>`).join('');
+
+                certModal.hidden = false;
+                document.body.style.overflow = 'hidden';
+                closeModalBtn.focus();
+            }
+
+            function closeCertModal() {
+                if (!certModal) return;
+                certModal.hidden = true;
+                document.body.style.overflow = '';
+                if (lastFocusedCard) lastFocusedCard.focus();
+            }
+
+            certCards.forEach(card => {
+                card.addEventListener('click', () => {
+                    openCertModal(card.dataset.cert, card);
+                });
+                card.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        openCertModal(card.dataset.cert, card);
+                    }
+                });
+            });
+
+            if (closeModalBtn) {
+                closeModalBtn.addEventListener('click', closeCertModal);
+            }
+
+            if (certModal) {
+                certModal.addEventListener('click', (e) => {
+                    if (e.target === certModal) closeCertModal();
+                });
+            }
+
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && certModal && !certModal.hidden) {
+                    closeCertModal();
+                }
+            });
+
+            // 7. Copy Email Utility Button
+            const copyEmailBtn = document.getElementById('copyEmailBtn');
+            const copyBtnText = document.getElementById('copyBtnText');
+
+            if (copyEmailBtn && copyBtnText) {
+                copyEmailBtn.addEventListener('click', async () => {
+                    const email = copyEmailBtn.dataset.email;
+                    try {
+                        await navigator.clipboard.writeText(email);
+                        copyBtnText.textContent = 'Copied to Clipboard!';
+                        copyEmailBtn.classList.add('copied');
+                        setTimeout(() => {
+                            copyBtnText.textContent = 'Copy Email Address';
+                            copyEmailBtn.classList.remove('copied');
+                        }, 2200);
+                    } catch (err) {
+                        copyBtnText.textContent = email;
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
